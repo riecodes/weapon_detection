@@ -1,4 +1,4 @@
-# gun_detection
+# weapon_detection
 
 Weapon detection for Philippine CCTV and webcam feeds, built on YOLOv8 and OpenCV.
 

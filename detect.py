@@ -1,4 +1,4 @@
-"""Gun detection on a webcam or an RTSP CCTV stream.
+"""Weapon detection on a webcam or an RTSP CCTV stream.
 
     python detect.py                      # default webcam
     python detect.py 1                    # second webcam
@@ -36,7 +36,7 @@ def run(source=0, conf=0.4):
         if should_alert(hits, last, now):
             last = now
             print(f"[ALERT] {time.strftime('%H:%M:%S')} {', '.join(hits)}", flush=True)
-        cv2.imshow("gun detection - esc quits", result.plot())
+        cv2.imshow("weapon detection - esc quits", result.plot())
         if cv2.waitKey(1) == 27:
             break
     cv2.destroyAllWindows()
